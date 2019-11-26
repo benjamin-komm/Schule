@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Hallo " + username);
 
         System.out.println("Bitte Temperatur eingeben: ");
-        int temperatur = eingabe.nextInt();
+        double temperatur = eingabe.nextDouble();
 
         System.out.println("Bitte Temperatureinheit der eingegebenen Temperatur eingeben: \n(C = Celsius & F = Fahrenheit)");
         String einheit = eingabe.next();
@@ -22,14 +22,14 @@ public class Main {
 
     }
 
-    private static String calc(int temp, String einheit){
+    private static String calc(double temp, String einheit){
         String ergebnis;
         switch (einheit){
             case "C":
-                ergebnis = ((temp - 32) * 5 / 9) + "F";
+                ergebnis = (Math.round(temp - 32 * 5 / 9 * 100) / 100) + "F";
                 return ergebnis;
             case "F":
-                ergebnis = (temp * 1.8 + 32) + "C";
+                ergebnis = (Math.round(temp * 1.8 + 32 * 100) / 100) + "C";
                 return ergebnis;
         }
         return null;
