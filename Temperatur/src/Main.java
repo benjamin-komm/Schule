@@ -22,9 +22,9 @@ public class Main {
 
     }
 
-    private static String calc(double temp, String einheit){
+    private static String calc(double temp, String einheit) {
         String ergebnis;
-        switch (einheit){
+        switch (einheit) {
             case "C":
                 ergebnis = (Math.round(temp - 32 * 5 / 9 * 100) / 100) + "F";
                 return ergebnis;
@@ -34,5 +34,4 @@ public class Main {
         }
         return null;
     }
-
 }
