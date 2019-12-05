@@ -8,17 +8,10 @@ public class UngeradeZahlenChecker {
 
         Scanner eingabe = new Scanner(System.in);
 
-        System.out.println("1. Zahl:");
+        System.out.println("Zahl:");
         int zahl = eingabe.nextInt();
 
-        switch (zahl % 2){
-            case 0:
-                System.out.println("Die Zahl ist gerade!");
-                break;
-            case 1:
-                System.out.println("Die Zahl ist ungerade!");
-                break;
-        }
+        System.out.println((zahl % 2 == 1) ? "Die Zahl ist ungerade!" : "Die Zahl ist gerade!");
 
     }
 
