@@ -5,10 +5,10 @@ public class Verbrauch {
 	private double spritMenge;
 	private double spritPreis;
 	
-	Verbrauch(double str, double spM, double spP){
-		strecke = str;
-		spritMenge = spM;
-		spritPreis = spP;
+	Verbrauch(double strecke, double spritMenge, double spritPreis){
+		this.strecke = strecke;
+		this.spritMenge = spritMenge;
+		this.spritPreis = spritPreis;
 	}
 	
 	public double verbrauchPro100Km() {
