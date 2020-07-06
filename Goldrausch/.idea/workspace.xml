@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="287cd87d-ef4c-4c05-aede-e79ea0678c0f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Goldrausch.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Goldrausch/Gold.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Goldrausch/Goldrausch.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Gold.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Goldrausch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spritpreis/bin/Verbrauch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spritpreis/bin/Verbrauch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spritpreis/bin/VerbrauchTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Spritpreis/bin/VerbrauchTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Spritpreis/src/Verbrauch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Spritpreis/src/Verbrauch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +31,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Spritpreis" />
   </component>
   <component name="RunManager">
     <configuration name="Goldrausch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -67,7 +57,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593758395099</updated>
-      <workItem from="1593758400088" duration="536000" />
+      <workItem from="1593758400088" duration="1290000" />
+      <workItem from="1593759819151" duration="39000" />
     </task>
     <servers />
   </component>
@@ -75,21 +66,25 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="159" key="GridCell.Tab.0.bottom" timestamp="1593758909487">
+    <state x="421" y="100" key="FileChooserDialogImpl" timestamp="1593759855029">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="159" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1593758909487" />
-    <state width="1237" height="159" key="GridCell.Tab.0.center" timestamp="1593758909486">
+    <state x="421" y="100" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1593759855029" />
+    <state width="1237" height="159" key="GridCell.Tab.0.bottom" timestamp="1593759700409">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="159" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1593758909486" />
-    <state width="1237" height="159" key="GridCell.Tab.0.left" timestamp="1593758909486">
+    <state width="1237" height="159" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1593759700409" />
+    <state width="1237" height="159" key="GridCell.Tab.0.center" timestamp="1593759700408">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="159" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1593758909486" />
-    <state width="1237" height="159" key="GridCell.Tab.0.right" timestamp="1593758909486">
+    <state width="1237" height="159" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1593759700408" />
+    <state width="1237" height="159" key="GridCell.Tab.0.left" timestamp="1593759700408">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state width="1237" height="159" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1593758909486" />
+    <state width="1237" height="159" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1593759700408" />
+    <state width="1237" height="159" key="GridCell.Tab.0.right" timestamp="1593759700408">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1237" height="159" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1593759700408" />
   </component>
 </project>
