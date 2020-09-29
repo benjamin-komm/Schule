@@ -31,7 +31,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Spritpreis" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Goldrausch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -59,6 +59,7 @@
       <updated>1593758395099</updated>
       <workItem from="1593758400088" duration="1290000" />
       <workItem from="1593759819151" duration="39000" />
+      <workItem from="1601371980288" duration="479000" />
     </task>
     <servers />
   </component>
