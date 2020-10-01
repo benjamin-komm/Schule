@@ -5,7 +5,6 @@ public class Goldrausch {
 
         gold.grammInUnze(32);
         System.out.println(gold.bekommeGoldwert(10));
-
     }
 
 }
