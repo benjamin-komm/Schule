@@ -8,7 +8,7 @@ public class Schueler {
 
     public Schueler(String name, String adresse) {
         this.name = name;
-        this.adresse = adresse;
+        this.setAdresse(adresse);
         this.anzahlKurse = 0;
         this.kurse = new String[10];
         this.noten = new int[10];
