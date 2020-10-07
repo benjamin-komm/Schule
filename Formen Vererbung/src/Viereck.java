@@ -10,6 +10,8 @@ public class Viereck {
     protected double delta;
 
     public double umfangBerechnen(){
+        if (this.c == 0)  this.c = this.a;
+        if (this.d == 0) this.d = this.b;
         return this.a + this.b + this.c + this.d;
     }
 
