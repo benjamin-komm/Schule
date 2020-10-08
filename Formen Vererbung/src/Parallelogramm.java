@@ -3,6 +3,8 @@ public class Parallelogramm extends Viereck {
     public Parallelogramm(double a, double b, double alpha) {
         this.a = a;
         this.b = b;
+        this.c = a;
+        this.d = b;
         this.alpha = alpha;
     }
 
