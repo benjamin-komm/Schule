@@ -3,8 +3,7 @@ public class Parallelogramm extends Viereck {
     private double winkel;
 
     public Parallelogramm(double laenge, double breite, double winkel) {
-        this.laenge = laenge;
-        this.breite = breite;
+        super(laenge, breite);
         this.winkel = winkel;
     }
 

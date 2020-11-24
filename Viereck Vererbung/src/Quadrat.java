@@ -1,8 +1,7 @@
 public class Quadrat extends Viereck {
 
     public Quadrat(double laenge) {
-        this.laenge = laenge;
-        this.breite = laenge;
+        super(laenge, laenge);
     }
 
     public double diagonaleBerechnen() {
