@@ -16,7 +16,6 @@ public class Main {
         } else {
             System.out.println("Der eingegebene PUK ist falsch!");
         }
-
     }
 
 }
