@@ -46,7 +46,12 @@ public class EasyWindow extends JFrame {
         panel.add(exit);
 
         add.addActionListener(actionEvent -> lm.addElement(tf.getText()));
-        remove.addActionListener(actionEvent -> lm.removeElementAt(list.getSelectedIndex()));
+        remove.addActionListener(actionEvent -> {
+            if (list.getSelectedIndex() > 0){
+                lm.removeElementAt(list.getSelectedIndex());
+            }
+        });
+
         removeAll.addActionListener(actionEvent -> lm.removeAllElements());
         exit.addActionListener(actionEvent -> System.exit(0));
 
