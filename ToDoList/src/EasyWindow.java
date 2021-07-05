@@ -8,7 +8,7 @@ public class EasyWindow extends JFrame {
 
     private final JList<String> list;
     private final DefaultListModel<String> lm;
-    private final JTextField tf;
+    //private final JTextField tf;
 
     public EasyWindow() {
         super();
@@ -29,8 +29,17 @@ public class EasyWindow extends JFrame {
         list = new JList<>(lm);
         final JScrollPane sp = new JScrollPane(list);
         con.add(sp, BorderLayout.CENTER);
-        tf = new JTextField();
-        con.add(tf, BorderLayout.NORTH);
+
+        final JPanel inputPanel = new JPanel();
+        inputPanel.setLayout(new GridLayout(1, 2));
+
+        JTextField tfBesch = new JTextField();
+        JTextField tfAnz = new JTextField("1");
+        inputPanel.add(tfBesch);
+        inputPanel.add(tfAnz);
+
+        //tf = new JTextField();
+        //con.add(tf, BorderLayout.NORTH);
 
         final JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(4, 1));
@@ -45,9 +54,18 @@ public class EasyWindow extends JFrame {
         panel.add(removeAll);
         panel.add(exit);
 
-        add.addActionListener(actionEvent -> lm.addElement(tf.getText()));
+        ToDoListEntry toDoListEntry = new ToDoListEntry();
+
+        add.addActionListener(actionEvent -> {
+            if (tfBesch.getText().length() > 0 && tfAnz.getText().length() > 0) {
+                lm.addElement(toDoListEntry.createEntry(tfBesch.getText(), Integer.parseInt(tfAnz.getText())));
+            }
+        });
+
+        // add.addActionListener(actionEvent -> lm.addElement(tf.getText()));
+
         remove.addActionListener(actionEvent -> {
-            if (list.getSelectedIndex() > 0){
+            if (list.getSelectedIndex() > 0) {
                 lm.removeElementAt(list.getSelectedIndex());
             }
         });
@@ -55,6 +73,7 @@ public class EasyWindow extends JFrame {
         removeAll.addActionListener(actionEvent -> lm.removeAllElements());
         exit.addActionListener(actionEvent -> System.exit(0));
 
+        con.add(inputPanel, BorderLayout.NORTH);
         con.add(panel, BorderLayout.EAST);
 
         setSize(500, 350);
