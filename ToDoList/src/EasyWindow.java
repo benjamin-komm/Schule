@@ -58,7 +58,10 @@ public class EasyWindow extends JFrame {
 
         add.addActionListener(actionEvent -> {
             if (tfBesch.getText().length() > 0 && tfAnz.getText().length() > 0) {
-                lm.addElement(toDoListEntry.createEntry(tfBesch.getText(), Integer.parseInt(tfAnz.getText())));
+                try {
+                    lm.addElement(toDoListEntry.createEntry(tfBesch.getText(), Integer.parseInt(tfAnz.getText())));
+                } catch (NumberFormatException ignore){
+                }
             }
         });
 
