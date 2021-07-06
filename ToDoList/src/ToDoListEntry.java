@@ -8,7 +8,6 @@ public class ToDoListEntry {
     }
 
     private class Entry {
-
         public String besch = "";
         public int anz = 0;
 

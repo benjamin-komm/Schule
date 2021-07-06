@@ -8,7 +8,6 @@ public class EasyWindow extends JFrame {
 
     private final JList<String> list;
     private final DefaultListModel<String> lm;
-    //private final JTextField tf;
 
     public EasyWindow() {
         super();
@@ -31,15 +30,13 @@ public class EasyWindow extends JFrame {
         con.add(sp, BorderLayout.CENTER);
 
         final JPanel inputPanel = new JPanel();
-        inputPanel.setLayout(new GridLayout(1, 2));
+        inputPanel.setLayout(new BorderLayout());
 
         JTextField tfBesch = new JTextField();
         JTextField tfAnz = new JTextField("1");
-        inputPanel.add(tfBesch);
-        inputPanel.add(tfAnz);
-
-        //tf = new JTextField();
-        //con.add(tf, BorderLayout.NORTH);
+        tfAnz.setPreferredSize(new Dimension(100, 25));
+        inputPanel.add(tfBesch, BorderLayout.CENTER);
+        inputPanel.add(tfAnz, BorderLayout.EAST);
 
         final JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(4, 1));
@@ -64,8 +61,6 @@ public class EasyWindow extends JFrame {
                 }
             }
         });
-
-        // add.addActionListener(actionEvent -> lm.addElement(tf.getText()));
 
         remove.addActionListener(actionEvent -> {
             if (list.getSelectedIndex() > 0) {
