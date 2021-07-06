@@ -8,6 +8,7 @@ public class EasyWindow extends JFrame {
 
     private final JList<String> list;
     private final DefaultListModel<String> lm;
+    public ToDoListEntryIOTxt toDoListEntryIOTxt = new ToDoListEntryIOTxt();
 
     public EasyWindow() {
         super();
@@ -51,6 +52,8 @@ public class EasyWindow extends JFrame {
         panel.add(removeAll);
         panel.add(exit);
 
+        toDoListEntryIOTxt.load(lm);
+
         ToDoListEntry toDoListEntry = new ToDoListEntry();
 
         add.addActionListener(actionEvent -> {
@@ -69,7 +72,7 @@ public class EasyWindow extends JFrame {
         });
 
         removeAll.addActionListener(actionEvent -> lm.removeAllElements());
-        exit.addActionListener(actionEvent -> System.exit(0));
+        exit.addActionListener(actionEvent -> exit());
 
         con.add(inputPanel, BorderLayout.NORTH);
         con.add(panel, BorderLayout.EAST);
@@ -79,6 +82,7 @@ public class EasyWindow extends JFrame {
     }
 
     private void exit() {
+        toDoListEntryIOTxt.save(lm);
         System.exit(0);
     }
 
