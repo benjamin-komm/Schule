@@ -1,10 +1,12 @@
+import org.jetbrains.annotations.NotNull;
+
 import javax.swing.*;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 
 public class ToDoListEntryIOTxt {
 
-    public void save(DefaultListModel list) {
+    public void save(@NotNull DefaultListModel list) {
         try {
             File f = new File("todo.txt");
             BufferedWriter out = new BufferedWriter(

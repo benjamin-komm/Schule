@@ -25,8 +25,8 @@ public class EasyWindow extends JFrame {
         final Container con = getContentPane();
         con.setLayout(new BorderLayout());
 
-        lm = new DefaultListModel<>();
-        list = new JList<>(lm);
+        this.lm = new DefaultListModel<>();
+        this.list = new JList<>(lm);
         final JScrollPane sp = new JScrollPane(list);
         con.add(sp, BorderLayout.CENTER);
 
@@ -60,7 +60,7 @@ public class EasyWindow extends JFrame {
             if (tfBesch.getText().length() > 0 && tfAnz.getText().length() > 0) {
                 try {
                     lm.addElement(toDoListEntry.createEntry(tfBesch.getText(), Integer.parseInt(tfAnz.getText())));
-                } catch (NumberFormatException ignore){
+                } catch (NumberFormatException ignore) {
                 }
             }
         });
