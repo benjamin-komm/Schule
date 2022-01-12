@@ -38,12 +38,7 @@ public class Jdbc01Connect {
          // 2. Öffnen einer Connection zur DB
          //Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/fb", "root", "");
 
-          Connection connection = null;
-          try {
-              connection = Util.getConnection("BEISPIEL");
-          } catch (IOException e) {
-              e.printStackTrace();
-          }
+          Connection connection = Util.getConnection("BEISPIEL");
 
          /*
           * TODO
@@ -76,6 +71,8 @@ public class Jdbc01Connect {
          e.printStackTrace();
       } catch (SQLException e) {
          System.out.println("SQL-Fehler");
+         e.printStackTrace();
+      } catch (IOException e) {
          e.printStackTrace();
       }
    }
